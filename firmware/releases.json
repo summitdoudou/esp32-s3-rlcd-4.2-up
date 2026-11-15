@@ -17,8 +17,8 @@
         {
           "name": "weather_clock_v1.6.24_merged.bin",
           "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.24/weather_clock_v1.6.24_merged.bin",
-          "size": 0,
-          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size": 16509951,
+          "sha256": "a25b96cb3d4669423c2224fb86c8700aaab08872dc1a553a5dbf3bf679c759d0",
           "role": "merged"
         }
       ]
