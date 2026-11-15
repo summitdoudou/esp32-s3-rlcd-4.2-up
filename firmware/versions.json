@@ -1,5 +1,12 @@
 [
   {
+    "version": "v1.6.22",
+    "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.22.bin",
+    "sha256": "5a778df8d4bb426618deec485492480239a02ed5a2d11e7aa3d47436518a1da0",
+    "size": 6357648,
+    "notes": "v1.6.22：共 1 项更新。\n1. 修复网络广播播放变慢、声音低沉拉长的问题：广播流为 48kHz 立体声，改为重采样到 16kHz 单声道再送扬声器。\n完整说明见源码仓库同版本 Release。"
+  },
+  {
     "version": "v1.6.21",
     "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.21.bin",
     "sha256": "4dacafae9aaa08c1bd82d176a1e122b1edea0e6d55b9d2ab46709a7794ec4b2c",
