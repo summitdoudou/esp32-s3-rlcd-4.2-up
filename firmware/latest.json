@@ -1,7 +1,7 @@
 {
-  "version": "v1.6.25",
-  "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.25/weather_clock_v1.6.25.bin",
-  "sha256": "c54ae3a2621aa0b4d47174746be6ddb208dbb6b2419d65ad19c649f692be0900",
-  "size": 6358480,
-  "notes": "v1.6.25：共 2 项修复（真机反馈）。\n1. 修复广播播放中切回小智页卡在\"启动小智中\"：借道播放改为等待小智音频会话真正建立，广播不再抢先占用播放门与 Codec。\n2. 修复后台广播一顿一顿：独立会话模式去掉过时的 TTS 丢帧闸门，起播预灌加大到约 2 秒、缓冲加大到 32KB。\n完整说明见源码仓库同版本 Release。"
+  "version": "v1.6.26",
+  "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.26/weather_clock_v1.6.26.bin",
+  "sha256": "7e26f3b13446dbd74bc0a6d8e6fc90faf28f54e88080a3a606ff16edd2f6cc94",
+  "size": 6358528,
+  "notes": "v1.6.26：共 2 项修复（真机反馈）。\n1. 修复广播播放中切回小智页卡在\"启动小智中\"：借道播放改为等待小智音频会话真正建立，广播不再抢先占用播放门与 Codec。\n2. 修复后台广播一顿一顿：独立会话模式去掉过时的 TTS 丢帧闸门，起播预灌加大到约 2 秒、缓冲加大到 32KB。\n完整说明见源码仓库同版本 Release。"
 }
