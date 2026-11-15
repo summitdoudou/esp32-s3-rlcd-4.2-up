@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-15T09:40:00Z",
+  "generated_at": "2026-11-15T10:44:10Z",
   "items": [
+    {
+      "version": "v1.6.24",
+      "notes": "v1.6.24：共 3 项更新。\n1. 网络广播支持后台播放：离开小智 AI 页后继续收听；小智页在场时借用其通道播放，对话自动暂停、说完续播；说\"关闭广播\"才会停止；低电量自动退出广播。\n2. 闹钟与番茄钟完成音自动让位广播并播完续播。\n3. 小智页空闲自动退出修复：待机聆听状态不再阻止\"小智节能\"回首页，5 分钟无交互自动返回。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-15T10:44:10Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.24.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.24/weather_clock_v1.6.24.bin",
+          "size": 6358432,
+          "sha256": "7bc79d49248765a5e1f5aa8a6d9a87c7366b3be305651d2bda5631ef22c7e76d",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.24_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.24/weather_clock_v1.6.24_merged.bin",
+          "size": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.22",
       "notes": "v1.6.22：共 1 项更新。\n1. 修复网络广播播放变慢、声音低沉拉长的问题：广播流为 48kHz 立体声，改为重采样到 16kHz 单声道再送扬声器。\n完整说明见源码仓库同版本 Release。",
