@@ -1,22 +1,22 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-15T08:29:49Z",
+  "generated_at": "2026-11-15T09:40:00Z",
   "items": [
     {
-      "version": "v1.6.21",
-      "notes": "v1.6.21：共 1 项更新。\n1. 新增网络广播功能（小智 AI 页语音\"播放北京新闻广播\"），并修复播放卡顿。\n完整说明见源码仓库同版本 Release。",
-      "release_url": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases/tag/v1.6.21",
-      "firmware_build_time": "2026-11-15T14:34",
+      "version": "v1.6.22",
+      "notes": "v1.6.22：共 1 项更新。\n1. 修复网络广播播放变慢、声音低沉拉长的问题：广播流为 48kHz 立体声，改为重采样到 16kHz 单声道再送扬声器。\n完整说明见源码仓库同版本 Release。",
+      "release_url": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases/tag/v1.6.22",
+      "firmware_build_time": "2026-11-15T17:33",
       "app": {
-        "name": "weather_clock_v1.6.21.bin",
-        "url": "./firmware/releases/v1.6.21/weather_clock_v1.6.21.bin",
-        "sha256": "4dacafae9aaa08c1bd82d176a1e122b1edea0e6d55b9d2ab46709a7794ec4b2c",
-        "size": 6357264
+        "name": "weather_clock_v1.6.22.bin",
+        "url": "./firmware/releases/v1.6.22/weather_clock_v1.6.22.bin",
+        "sha256": "5a778df8d4bb426618deec485492480239a02ed5a2d11e7aa3d47436518a1da0",
+        "size": 6357648
       },
       "merged": {
-        "name": "weather_clock_v1.6.21_merged.bin",
-        "url": "./firmware/releases/v1.6.21/weather_clock_v1.6.21_merged.bin",
-        "sha256": "1d949c3c1dec8ef30ea8f5ba2f9dbbbbfbff49df307d77aaef5079670a4ba0fd",
+        "name": "weather_clock_v1.6.22_merged.bin",
+        "url": "./firmware/releases/v1.6.22/weather_clock_v1.6.22_merged.bin",
+        "sha256": "e1cf8f1cba50ebb82342904f3de5195edfe730f74e6341c35ac799a63c01c570",
         "size": 16509951
       }
     }
