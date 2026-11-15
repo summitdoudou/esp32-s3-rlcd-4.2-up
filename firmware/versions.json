@@ -1,5 +1,12 @@
 [
   {
+    "version": "v1.6.24",
+    "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.24.bin",
+    "sha256": "7bc79d49248765a5e1f5aa8a6d9a87c7366b3be305651d2bda5631ef22c7e76d",
+    "size": 6358432,
+    "notes": "v1.6.24：共 3 项更新。\n1. 网络广播支持后台播放：离开小智 AI 页后继续收听；小智页在场时借用其通道播放，对话自动暂停、说完续播；说\"关闭广播\"才会停止；低电量自动退出广播。\n2. 闹钟与番茄钟完成音自动让位广播并播完续播。\n3. 小智页空闲自动退出修复：待机聆听状态不再阻止\"小智节能\"回首页，5 分钟无交互自动返回。\n完整说明见源码仓库同版本 Release。"
+  },
+  {
     "version": "v1.6.22",
     "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.22.bin",
     "sha256": "5a778df8d4bb426618deec485492480239a02ed5a2d11e7aa3d47436518a1da0",
