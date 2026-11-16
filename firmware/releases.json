@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-15T11:47:39Z",
+  "generated_at": "2026-11-16T14:09:48Z",
   "items": [
+    {
+      "version": "v1.6.27",
+      "notes": "v1.6.27：共 2 项修复（真机反馈）。\n1. 新增物理出口：长按 BOOT 键(≥1.2秒)强制终止广播服务——任何页面、任何卡死状态下都能停广播，不再依赖语音\"关闭广播\"。\n2. 广播中切回小智卡\"启动中\"收口：等待广播让位超时(3秒)后不再静默重试，改为硬停广播后再启动小智，弱网重连退避场景下也能确定性恢复。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-16T14:09:48Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.27.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.27/weather_clock_v1.6.27.bin",
+          "size": 6358864,
+          "sha256": "9ae92bbdd9bf5485d2f1ff083efbdb5cf0e0e1a21b1d9d5e47b582b7c70993a1",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.27_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.27/weather_clock_v1.6.27_merged.bin",
+          "size": 16509951,
+          "sha256": "81d7f25e8a480b78bf95694a7bc23633b195395c7da947fa0c37c7fb829fc54d",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.26",
       "notes": "v1.6.26：共 2 项修复（真机反馈）。\n1. 修复广播播放中切回小智页卡在\"启动小智中\"：借道播放改为等待小智音频会话真正建立，广播不再抢先占用播放门与 Codec。\n2. 修复后台广播一顿一顿：独立会话模式去掉过时的 TTS 丢帧闸门，起播预灌加大到约 2 秒、缓冲加大到 32KB。\n完整说明见源码仓库同版本 Release。",
