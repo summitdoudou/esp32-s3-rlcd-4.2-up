@@ -1,5 +1,12 @@
 [
   {
+    "version": "v1.6.27",
+    "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.27.bin",
+    "sha256": "9ae92bbdd9bf5485d2f1ff083efbdb5cf0e0e1a21b1d9d5e47b582b7c70993a1",
+    "size": 6358864,
+    "notes": "v1.6.27：共 2 项修复（真机反馈）。\n1. 新增物理出口：长按 BOOT 键(≥1.2秒)强制终止广播服务——任何页面、任何卡死状态下都能停广播，不再依赖语音\"关闭广播\"。\n2. 广播中切回小智卡\"启动中\"收口：等待广播让位超时(3秒)后不再静默重试，改为硬停广播后再启动小智，弱网重连退避场景下也能确定性恢复。\n完整说明见源码仓库同版本 Release。"
+  },
+  {
     "version": "v1.6.26",
     "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.26.bin",
     "sha256": "7e26f3b13446dbd74bc0a6d8e6fc90faf28f54e88080a3a606ff16edd2f6cc94",
