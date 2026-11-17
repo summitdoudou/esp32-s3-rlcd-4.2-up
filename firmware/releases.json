@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-17T05:34:14Z",
+  "generated_at": "2026-11-17T11:40:25Z",
   "items": [
+    {
+      "version": "v1.6.29",
+      "notes": "v1.6.29：共 4 项更新（广播卡顿串口日志确诊修复）。\n1. 扬声器瞬时写失败不再掐断广播：小智说话回合切换/退出页面的瞬间，广播改为原地重试+丢帧续播，连续失败超5秒才重连。\n2. 网络瞬时打嗝不再当断流：读流返回空由 5 秒容忍窗内继续等待，只有连接真结束才重连。\n3. 新增 1 秒蓄水池缓冲：解码只消费水位以上数据，Wi-Fi 突发空洞由缓冲垫底。\n4. 广播源改走明文 HTTP：重连省掉 TLS 握手（约快 1-3 秒），弱网下更稳、更省电。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-17T11:40:25Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.29.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.29/weather_clock_v1.6.29.bin",
+          "size": 6359888,
+          "sha256": "2c47aa1155b914c1668760512c0312460074e2eb26c153e2e490311b0bea1d3c",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.29_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.29/weather_clock_v1.6.29_merged.bin",
+          "size": 16509951,
+          "sha256": "0f61db78396e0977ca63559e87ea8de38f8a530ec707cc36a219729c81789d72",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.28",
       "notes": "v1.6.28：共 3 项改进（真机反馈）。\n1. 修复广播播放中切回小智页永久\"小智准备中\"（网络锁死锁根治）：唤醒锁分 Keepalive/Exclusive 两种身份，广播保活不再拦截小智任务创建，配网/升级仍正确互斥。\n2. 广播声不再被当成语音输入：广播出声期间麦克风自动静音（停播即恢复）；此期间\"你好小智\"同样不响应属预期。\n3. 小智被配网/升级类操作等待超过5秒时，屏幕明确提示\"等待配网/升级完成\"，不再无解释转圈。\n完整说明见源码仓库同版本 Release。",
