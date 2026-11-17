@@ -1,7 +1,7 @@
 {
-  "version": "v1.6.27",
-  "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.27/weather_clock_v1.6.27.bin",
-  "sha256": "9ae92bbdd9bf5485d2f1ff083efbdb5cf0e0e1a21b1d9d5e47b582b7c70993a1",
-  "size": 6358864,
-  "notes": "v1.6.27：共 2 项修复（真机反馈）。\n1. 新增物理出口：长按 BOOT 键(≥1.2秒)强制终止广播服务——任何页面、任何卡死状态下都能停广播，不再依赖语音\"关闭广播\"。\n2. 广播中切回小智卡\"启动中\"收口：等待广播让位超时(3秒)后不再静默重试，改为硬停广播后再启动小智，弱网重连退避场景下也能确定性恢复。\n完整说明见源码仓库同版本 Release。"
+  "version": "v1.6.28",
+  "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.28/weather_clock_v1.6.28.bin",
+  "sha256": "3d4acf355fbcb0e512131bc6de126e46d0f16cd35f59256ff17ce0970a287845",
+  "size": 6359552,
+  "notes": "v1.6.28：共 3 项改进（真机反馈）。\n1. 修复广播播放中切回小智页永久\"小智准备中\"（网络锁死锁根治）：唤醒锁分 Keepalive/Exclusive 两种身份，广播保活不再拦截小智任务创建，配网/升级仍正确互斥。\n2. 广播声不再被当成语音输入：广播出声期间麦克风自动静音（停播即恢复）；此期间\"你好小智\"同样不响应属预期。\n3. 小智被配网/升级类操作等待超过5秒时，屏幕明确提示\"等待配网/升级完成\"，不再无解释转圈。\n完整说明见源码仓库同版本 Release。"
 }
