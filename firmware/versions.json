@@ -1,5 +1,12 @@
 [
   {
+    "version": "v1.6.32",
+    "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.32.bin",
+    "sha256": "ff10828bd3a52b3413dd748a92294e5f7b9e636d76dab85446ddd3c6f88edcfb",
+    "size": 6284496,
+    "notes": "v1.6.32：共 2 项更新（屏幕刷新提速、后台广播省电）。\n1. 屏幕刷新重写：像素地址改纯算术计算并打包写屏，全屏刷新的内存访问量降约 8 倍，页面切换/图片页/开机动画更流畅；同时回收 360KB 显示缓存内存。新路径与旧路径经逐字节黄金图测试全等验证。\n2. 广播省电收窄：Wi-Fi 高性能态只在真实拉流时开启，暂停、让位小智、弱网重连等待期间恢复正常省电模式，待机与后台广播更省电。\n完整说明见源码仓库同版本 Release。"
+  },
+  {
     "version": "v1.6.31",
     "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.31.bin",
     "sha256": "bff11be941892b9bb057c7b29a832ebe95623bd4ba1a480717641bc84e6e8c48",
