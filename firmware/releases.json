@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-18T11:51:48Z",
+  "generated_at": "2026-11-18T12:20:05Z",
   "items": [
+    {
+      "version": "v1.6.31",
+      "notes": "v1.6.31：共 3 项更新（下载提速、固件瘦身、发布质量门禁）。\n1. 固件同步（OTA）提速：下载缓冲 4KB→16KB，取消每块固定 25ms 延时，正常网络下整包升级预计快约 30-40 秒。\n2. 固件瘦身：裁剪 31 个未使用的界面控件库代码，App 体积回收约 76KB，为后续功能腾出空间。\n3. 发布门禁：46 项离线逻辑测试纳入 CI 强制执行，并新增固件体积预算检查，防止后续版本体积失控。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-18T12:20:05Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.31.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.31/weather_clock_v1.6.31.bin",
+          "size": 6284064,
+          "sha256": "bff11be941892b9bb057c7b29a832ebe95623bd4ba1a480717641bc84e6e8c48",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.31_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.31/weather_clock_v1.6.31_merged.bin",
+          "size": 16509951,
+          "sha256": "46f8a536a662f1b0e3a86b111266e59c1eb5cb02667090cb75de648846622c75",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.30",
       "notes": "v1.6.30：共 2 项更新（广播与语音底层稳定性修复，静态审查 P0 项落地）。\n1. 广播启停并发竞态修复：启动/停止改为持锁握手回收，同时按按键、语音、闹钟快速启停不再出现\"以为开始播放实际已停\"的假启动，也不再有停止瞬间复用任务栈导致随机崩溃的窗口；退场期间的启动指令会明确答复稍后再试。\n2. AI 语音停止不再强杀卡住的播放任务：超时保留现场、下轮自动回收，避免强杀后音频子系统状态损坏导致的偶发无声或重启后初始化失败。\n完整说明见源码仓库同版本 Release。",
