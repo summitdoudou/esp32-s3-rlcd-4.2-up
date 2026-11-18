@@ -1,5 +1,12 @@
 [
   {
+    "version": "v1.6.30",
+    "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.30.bin",
+    "sha256": "28e173fc6db63293dc074f485d688e8ff4e7a0cb7cb95bd0c2813e7bc7fa1a28",
+    "size": 6361488,
+    "notes": "v1.6.30：共 2 项更新（广播与语音底层稳定性修复，静态审查 P0 项落地）。\n1. 广播启停并发竞态修复：启动/停止改为持锁握手回收，同时按按键、语音、闹钟快速启停不再出现\"以为开始播放实际已停\"的假启动，也不再有停止瞬间复用任务栈导致随机崩溃的窗口；退场期间的启动指令会明确答复稍后再试。\n2. AI 语音停止不再强杀卡住的播放任务：超时保留现场、下轮自动回收，避免强杀后音频子系统状态损坏导致的偶发无声或重启后初始化失败。\n完整说明见源码仓库同版本 Release。"
+  },
+  {
     "version": "v1.6.29",
     "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/weather_clock_v1.6.29.bin",
     "sha256": "2c47aa1155b914c1668760512c0312460074e2eb26c153e2e490311b0bea1d3c",
