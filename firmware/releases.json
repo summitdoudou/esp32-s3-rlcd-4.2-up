@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-18T12:20:05Z",
+  "generated_at": "2026-11-18T12:39:19Z",
   "items": [
+    {
+      "version": "v1.6.32",
+      "notes": "v1.6.32：共 2 项更新（屏幕刷新提速、后台广播省电）。\n1. 屏幕刷新重写：像素地址改纯算术计算并打包写屏，全屏刷新的内存访问量降约 8 倍，页面切换/图片页/开机动画更流畅；同时回收 360KB 显示缓存内存。新路径与旧路径经逐字节黄金图测试全等验证。\n2. 广播省电收窄：Wi-Fi 高性能态只在真实拉流时开启，暂停、让位小智、弱网重连等待期间恢复正常省电模式，待机与后台广播更省电。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-18T12:39:19Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.32.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.32/weather_clock_v1.6.32.bin",
+          "size": 6284496,
+          "sha256": "ff10828bd3a52b3413dd748a92294e5f7b9e636d76dab85446ddd3c6f88edcfb",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.32_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.32/weather_clock_v1.6.32_merged.bin",
+          "size": 16509951,
+          "sha256": "33eb0bcbd63d8e5cd165cc9914b4c339ff83ad755aa7fa8760b704f109cbbfcd",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.31",
       "notes": "v1.6.31：共 3 项更新（下载提速、固件瘦身、发布质量门禁）。\n1. 固件同步（OTA）提速：下载缓冲 4KB→16KB，取消每块固定 25ms 延时，正常网络下整包升级预计快约 30-40 秒。\n2. 固件瘦身：裁剪 31 个未使用的界面控件库代码，App 体积回收约 76KB，为后续功能腾出空间。\n3. 发布门禁：46 项离线逻辑测试纳入 CI 强制执行，并新增固件体积预算检查，防止后续版本体积失控。\n完整说明见源码仓库同版本 Release。",
