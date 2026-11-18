@@ -1,7 +1,28 @@
 {
   "source": "https://github.com/summitdoudou/ESP32-S3-RLCD-4.2/releases",
-  "generated_at": "2026-11-17T11:40:25Z",
+  "generated_at": "2026-11-18T11:51:48Z",
   "items": [
+    {
+      "version": "v1.6.30",
+      "notes": "v1.6.30：共 2 项更新（广播与语音底层稳定性修复，静态审查 P0 项落地）。\n1. 广播启停并发竞态修复：启动/停止改为持锁握手回收，同时按按键、语音、闹钟快速启停不再出现\"以为开始播放实际已停\"的假启动，也不再有停止瞬间复用任务栈导致随机崩溃的窗口；退场期间的启动指令会明确答复稍后再试。\n2. AI 语音停止不再强杀卡住的播放任务：超时保留现场、下轮自动回收，避免强杀后音频子系统状态损坏导致的偶发无声或重启后初始化失败。\n完整说明见源码仓库同版本 Release。",
+      "published_at": "2026-11-18T11:51:48Z",
+      "assets": [
+        {
+          "name": "weather_clock_v1.6.30.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.30/weather_clock_v1.6.30.bin",
+          "size": 6361488,
+          "sha256": "28e173fc6db63293dc074f485d688e8ff4e7a0cb7cb95bd0c2813e7bc7fa1a28",
+          "role": "app"
+        },
+        {
+          "name": "weather_clock_v1.6.30_merged.bin",
+          "url": "https://summitdoudou.github.io/esp32-s3-rlcd-4.2-up/firmware/releases/v1.6.30/weather_clock_v1.6.30_merged.bin",
+          "size": 16509951,
+          "sha256": "8fa22c8064069776df3480b00e7bca3f2d2846d961e5f6d2d93a2dff22ff3831",
+          "role": "merged"
+        }
+      ]
+    },
     {
       "version": "v1.6.29",
       "notes": "v1.6.29：共 4 项更新（广播卡顿串口日志确诊修复）。\n1. 扬声器瞬时写失败不再掐断广播：小智说话回合切换/退出页面的瞬间，广播改为原地重试+丢帧续播，连续失败超5秒才重连。\n2. 网络瞬时打嗝不再当断流：读流返回空由 5 秒容忍窗内继续等待，只有连接真结束才重连。\n3. 新增 1 秒蓄水池缓冲：解码只消费水位以上数据，Wi-Fi 突发空洞由缓冲垫底。\n4. 广播源改走明文 HTTP：重连省掉 TLS 握手（约快 1-3 秒），弱网下更稳、更省电。\n完整说明见源码仓库同版本 Release。",
